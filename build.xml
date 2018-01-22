@@ -1,11 +1,12 @@
-<project default="compile">
-  <property name="src.java.dir" location="C:\Users\me\workspace\hub\src\hub"/>
-   <property name="result.dir" location="./target"/>
-   <property name="result.javaclasses.dir" location="${result.dir}/classes"/>
-  
-  <target name="compile">
-    <mkdir dir="${result.javaclasses.dir}"/>
-    <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
-      </javac>
-    </target>
-  </project>
+<project>
+
+
+<target name="compile">
+
+<mkdir dir="build/classes"/>
+
+<javac destdir="build/classes" srcdir="src"/>
+
+</target>
+
+</project>
